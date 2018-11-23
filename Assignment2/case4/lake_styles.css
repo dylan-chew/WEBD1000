@@ -1,0 +1,163 @@
+﻿@charset "utf-8";
+
+@font-face {
+ font-family: cac_champagne;
+ src: url("cac_champagne.woff") format("woff");
+      url("cac_champagne.tff") format("truetype");
+ font-family: DobkinPlain;
+ src: url("DobkinPlain.woff") format("woff");
+      url("DobkinPlain.tff") format("truetype");
+}
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Dylan Chew W0254970
+   Date:   4/10/2018
+   
+   Filename: lake_styles.css
+
+*/
+
+
+
+/* HTML and Body Styles */
+
+html {
+	background-color: rgb(255, 216, 197);
+}
+
+body {
+ background-color: rgb(247, 170, 120);
+ font-family: cac_champagne, sans-serif;
+}
+
+#leftcol {
+ background-color: white;
+ margin-right: 0;
+}
+
+#leftcol p {
+ padding-left: 2%;
+ padding-right: 2%;
+}
+
+#rightcol {
+ color: black;
+ background-color: rgb(247, 170, 120);
+ padding-bottom: 26%;
+
+}
+
+
+
+
+/* Heading Styles */
+
+section#leftcol > h1 {
+ font-family: DobkinPlain, "Monotype Corsiva", script;
+ font-size: 3em;
+ padding: 0em;
+ margin: 2%;
+}
+
+nav > h2 {
+ font-family: DobkinPlain, "Monotype Corsiva", cursive;
+ padding-left: 1em;
+ text-decoration: underline;
+}
+
+
+
+/* Aside and Blockquote Styles */
+
+aside:first-of-type {
+ background-color: rgb(229, 195, 186);
+}
+
+aside:last-of-type {
+ background-color: rgba(229, 195, 186, 0.5);
+}
+
+aside > h1 {
+ text-align: center;
+ text-decoration: underline;
+}
+
+
+aside > h2 {
+ text-align: center;
+}
+
+blockquote {
+ color: white;
+ font-style: italic;
+ font-weight: bold;
+ font-size: 1.2em;
+ font-family: "Times New Roman", Times, serif;
+ quotes: "\201C" "\201D";
+}
+
+blockquote::before {
+ content: open-quote;
+ font-family: "Times New Roman", Times, serif;
+ font-size: 1.6em;
+ font-weight: bold;
+}
+
+blockquote::after {
+ content: close-quote;
+ font-family: "Times New Roman", Times, serif;
+ font-size: 1.6em;
+ font-weight: bold;
+}
+
+
+
+
+
+/* Navigation Styles */	
+
+a {
+ text-decoration: none;
+ color: white;
+}
+
+#rightcol a {
+ color: black;
+}
+
+header nav {
+ background-color: rgba(51, 0, 51);
+}
+
+
+
+
+
+
+
+
+/* List Styles */
+
+nav ul {
+ list-style: none;
+}
+#rightcol nav ul {
+ list-style-type: circle;
+}
+
+
+/* Footer Styles */
+footer {
+ color: white;
+ text-align: center;
+ background-color: gray;
+}
+
+
+/*
+
+*/

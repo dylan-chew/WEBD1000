@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 4
+
+   Park City Gazette Style Sheet
+   Author: Dylan Chew W0254970
+   Date:   17/10/2018
+
+   Filename:         pcg_paper.css
+   Supporting Files: 
+   
+   *******The layout should be based on a fluid design ranging from 640 pixels up to 960 pixels.*******
+
+*/
+
+
+/*HTML and Body Style*/
+html {
+ background-color: rgb(255, 250, 202);
+ font-family: Verdana, Geneva, Arial, sans-serif;
+}
+
+body {
+ position: relative;
+ margin-left: auto;
+ margin-right: auto;
+ max-width: 960px;
+ min-width: 640px;
+ width: 95%;
+ background-color: rgb(252, 211, 156);
+ border-right: 3px solid black;
+ border-bottom: 3px solid black;
+}
+
+/*Header Styles*/
+header img {
+ width: 100%;
+ display: block;
+
+}
+
+/*Main Styles*/
+main {
+ border-left: 3px solid black;
+}
+
+
+/*Nav Styles*/
+nav#page_nav {
+ display: block;
+ float: left;
+ clear: left;
+ width: 15%;
+ text-align: left;
+}
+
+nav#stories {
+ float: left;
+ width: 15%;
+
+}
+
+nav#stories header{
+ text-align: center;
+ text-decoration: double underline;
+ font-weight: bold;
+}
+
+nav ul {
+padding: 0%;
+margin: 0%;
+}
+
+nav li {
+ display: block;
+ padding: .2em;
+ padding-left: 6px;
+}
+
+nav a {
+ display: block;
+ text-decoration: none;
+ font-size:80%;
+ width: 100%;
+}
+
+nav a:link,
+nav a:visited {
+ color: black;
+}
+
+nav a:hover, 
+nav a:active {
+ background-color: rgb(250, 220, 120);
+ border: 1px solid black;
+ font-weight: bold;
+}
+
+
+/*Section Styles*/
+section {
+ float: left;
+ width: 66%;
+ background-color: white;
+ padding: 2%;
+ overflow: auto;
+ position: relative;
+ height: 450px;
+}
+
+/*Scrollbar Styles*/
+/* width */
+
+
+/*Article Styles*/
+article.story h1{
+padding: -1em;
+text-decoration: underline;
+}
+
+article.story p{
+padding: 0%;
+font-size: 90%;
+}
+
+article.story  img {
+ margin: 0px;
+ float: right;
+}
+
+/*Footer Styles*/
+footer {
+ background-color: gray;
+ text-align: center;
+ float: bottom;
+ clear: both;
+ border-top: 2px solid black;
+ padding: 2%;
+}

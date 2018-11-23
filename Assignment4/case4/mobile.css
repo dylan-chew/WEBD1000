@@ -1,0 +1,93 @@
+/*
+//////////////////////////////////////////
+/////////MOBILE STYLES: 0 - 480px/////////
+//////////////////////////////////////////
+*/
+
+@media only screen and (max-width: 480px) {
+
+    html{
+        font-size: 50%;
+    }
+
+    body {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 10pt;
+        width: 100%;
+        border: none;
+    }
+
+    .text {
+        display: flex;
+        display: -webkit-box;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        order: 0;
+    }
+    
+    
+     p:nth-of-type(1) {
+        order: 1;
+    }
+    
+    p:nth-of-type(2) {
+        order: 2;
+    }
+    
+    p:nth-of-type(3) {
+        order: 3;
+    }
+    
+    p:nth-of-type(4) {
+        order: 4;
+    }
+    
+
+    main img {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        display: -webkit-box;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    /*
+    NAVICON STYLES
+    */
+
+    a#navicon {
+        display: block;
+        background-color: #333;
+        float: left;
+    }
+
+
+    nav.heading-nav .mainmenu {
+        display: none;
+    }
+
+    a#navicon:hover+.mainmenu, nav.heading-nav .mainmenu:hover {
+        display: block;
+    }
+
+    nav.left-nav {
+        order: 2;
+    }
+
+}
+
+
+

@@ -1,0 +1,35 @@
+<html>
+<head><title>Tables</title></head>
+<style>
+table.first
+{
+	border:1px solid black;
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+
+
+
+td
+{
+	border:1px solid red;
+	text-align: center;
+	padding: 2px;
+}
+
+
+</style>
+<body>
+<table class="first">
+<tr><td>row 1 col1</td><td>row 1 col2</td><td>row 1 col3</td><td rowspan="7">row 1 col4</td></tr>
+<tr><td>row 2 col1</td><td>row 2 col2</td><td>row 2 col3</td></tr>
+<tr><td colspan="3">row 3 col1</td></tr>
+<tr><td>row 4 col1</td><td>row 4 col2</td><td rowspan="4">row 4 col3</td></tr>
+<tr><td colspan="2">row 5 col1</td><</tr>
+<tr><td>row 6 col1</td><td>row 6 col2</td></tr>
+<tr><td>row 7 col1</td><td>row 7 col2</td></tr>
+</table>
+</body>
+</html>

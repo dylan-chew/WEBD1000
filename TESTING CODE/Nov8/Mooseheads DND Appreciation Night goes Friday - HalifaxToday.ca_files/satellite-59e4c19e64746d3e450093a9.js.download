@@ -1,0 +1,61 @@
+// used to surpress videos firing on video iframes
+var urlSectionsSplit = window.location.pathname.split('/'); 
+var numsections = urlSectionsSplit.length - 1; 
+var sect = "na"; 
+var auth = "na";
+
+if (urlSectionsSplit[1] == ""){
+  sect = "halifaxtoday : homepage"; //main section
+}else{
+  sect = "halifaxtoday : " + urlSectionsSplit[1];
+}
+if (numsections >1){
+  sect = "halifaxtoday : " + urlSectionsSplit[1]; //second level 
+}
+if (numsections >2){
+  sect = "halifaxtoday : " + urlSectionsSplit[1] + " : " + urlSectionsSplit[2] ; //third level 
+}
+if (numsections >3){
+  sect = "halifaxtoday : " + urlSectionsSplit[1] + " : " + urlSectionsSplit[2] + " : " + urlSectionsSplit[3] + " : " + urlSectionsSplit[4]; //fourth level 
+}
+
+var timeelement =  document.getElementsByTagName("time");
+if (typeof(timeelement) != 'undefined' && timeelement != null)
+{
+  var authorclass = document.getElementsByClassName("details-byline"); 
+  if (typeof(authorclass) != 'undefined' && authorclass != null)
+  {
+    var author = document.querySelector('.details-byline > span');
+    auth = author.innerHTML.toLowerCase();
+    auth = author.innerHTML.toLowerCase();
+  }
+}
+else {
+auth = "na";
+}
+
+
+if (document.location.href.indexOf("video/iframe") == -1) {
+  _satellite.notify("chartbeat running!!!");
+  var _sf_async_config={};
+  /** CONFIGURATION START **/
+  _sf_async_config.uid = 55711;
+  _sf_async_config.domain = document.domain;
+  _sf_async_config.useCanonical = true;
+  _sf_async_config.sections = sect; 
+  _sf_async_config.authors = auth;
+  /** CONFIGURATION END **/
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+      loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+}

@@ -1,0 +1,15 @@
+##########################
+#on the container element#
+##########################
+display: grid
+
+grid-template-rows:
+grid-template-columns:
+
+##################
+# on the children#
+##################
+grid-row-start:
+grid-row-end:
+grid-column-start
+grid-column-end:

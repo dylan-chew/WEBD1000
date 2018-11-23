@@ -1,0 +1,11 @@
+/*
+Page Box Styles
+*/
+@page {
+size: 8.5in 11in;
+margin: 0.5in;
+}
+
+img, nav, a, aside, footer, #carousel, #header-wrapper, span {
+display: none;
+}

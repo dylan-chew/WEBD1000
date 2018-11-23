@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+ <title>layout</title>
+ 
+ <style> 
+ body {
+  display: grid;
+  grid-template-rows: 80px 450px 150px 80px;
+  grid-template-columns: 10% 40% 40% 10%;
+  outline: 1px solid red;
+ }
+ 
+  section#left_section {
+  display: grid;
+  grid-template-rows: 15% 70% 15%;
+  grid-template-columns: 100%;
+  outline: 1px solid red;
+ }
+ 
+ footer {
+ grid-column-start: 1;
+ grid-column-end: 5;
+ grid-row-start: 4;
+ grid-row-end: 4;
+ outline: 1px solid blue;
+ text-align: center;
+ background-color:green;
+ }
+ 
+ header {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  outline: 1px solid pink;
+  text-align: center;
+  background-color:violet;
+ }
+ 
+ nav {
+  grid-column: 1;
+  grid-row: 2 / 4;
+  text-align: center;
+  outline: 1px solid orange;
+  background-color:orange;
+ }
+ 
+ section#left_section {
+ grid-column: 2 / 3;
+ grid-row: 2;
+ outline: 1px solid yellow;
+ text-align: center;
+ background-color: red;
+ }
+ 
+  section#right_section {
+ grid-column: 3 / 4;
+ grid-row: 2;
+ outline: 1px solid green;
+ text-align: center;
+ background-color: purple;
+ }
+ 
+   section#bottom_section {
+ grid-column: 2 / 4;
+ grid-row: 3;
+ outline: 1px solid green;
+ text-align: center;
+ background-color:blue;
+ }
+ 
+ aside {
+  grid-column: 4;
+  grid-row: 2 / 4;
+  text-align: center;
+  outline: 1px solid purple;
+  background-color:yellow;
+ }
+ 
+<!---Section Grid--->
+div.left_title {
+ grid-column 1;
+ grid-row: 1;
+ text-align: center;
+ background-color: blue;
+ outline: 1px solid black;
+ color: blue;
+}
+ 
+ </style>
+</head>
+
+<body>
+
+ <header>my header</header>
+ <nav>my nav</nav>
+ <section id="left_section">
+  <div class="left_title">The Title</div>
+  <div class="left_content">blah blah blah</div>
+  <div class="left_end">The End</div>
+ </section>
+ <section id="right_section">my section 2</section>
+ <section id="bottom_section">my section 3</section>
+ <aside>my aside</aside>
+ <footer>my footer</footer>
+ 
+</body>
+
+
+</html>

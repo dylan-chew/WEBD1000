@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>
+Nova Scotia Community College
+</title>
+
+
+<style>
+ body {
+  display: grid;
+  grid-template-rows: 48px 240px 240px 192px 192px 48px;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  outline: 1px solid red;
+ }
+ 
+header {
+ grid-column-start: 1;
+ grid-column-end: 4;
+ grid-row-start: 1;
+ grid-row-end: 1;
+ outline: 1px solid pink;
+ background-color: #004477;
+}
+
+nav.horizontal li {
+display: block;
+float: left;
+width:16.66%;
+background-color: white;
+}
+
+nav.horizontal a {
+ display: block;
+ text-align: center;
+}
+
+section {
+ display: block;
+ grid-column-start: 1;
+ grid-column-end: 3;
+ grid-row-start: 2;
+ grid-row-end: 3;
+}
+
+nav.right {
+ display: block;
+ grid-column-start: 3;
+ grid-column-end: 4;
+ grid-row-start: 2;
+ grid-row-end: 3;
+ outline: 1px solid red;
+}
+
+</style>
+
+</head>
+
+<body>
+
+ <header>
+nscc
+  <nav class="horizontal">
+   <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Admissions</a></li>
+    <li><a href="#">Explore NSCC</a></li>
+    <li><a href="#">Programs & Courses</a></li>
+    <li><a href="#">Student Services</a></li>
+   </ul>
+  </nav>
+ </header>
+
+ <section>
+  <img src="hp-carousel-lorenzo-nscc.jpg" alt="student" />
+ </section>
+
+ <nav class="right">
+  <ul>
+   <li><a href="#">Search Programs</a></li>
+   <li><a href="#">Search Continuing Education</a></li>
+   <li><a href="#">Explore Career Options</a></li>
+   <li><a href="#">Learning Online</a></li>
+  </ul>
+ </nav>
+ 
+ <nav id="middle">
+ </nav>
+
+ <nav id="dates">
+ </nav>
+ 
+ <nav id="news">
+ </nav>
+ 
+ <nav id="locations">
+ </nav>
+ 
+ <footer>
+ </footer>
+ 
+</body>
+
+
+</html>
