@@ -1,0 +1,12 @@
+/*
+===LAYOUT STYLES===
+*/
+
+.top {
+    height: 100vh;
+}
+
+#text {
+    padding: 10% 10% 3% 10%;
+    font-size: 2em;
+}

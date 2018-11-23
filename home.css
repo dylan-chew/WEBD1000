@@ -1,0 +1,73 @@
+/*
+===HOME PAGE STYLES===
+*/
+
+/*HTML and general styles*/
+p {
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 1.5em;
+}
+
+h1 {
+    padding-bottom: 2%;
+}
+
+
+/*Welcome*/
+#welcome {
+    background-color: rgb(126, 182, 255);
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#me {
+    width: 40%;
+    top: 50%;
+    left: 50%;
+}
+
+/*About*/
+#about {
+    background-color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.vertical-center {
+    min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 50vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center
+  }
+
+
+/*SOCIAL MEDIA SECTION/KEEP UP WIHT ME*/
+#social {
+    background-color: rgb(126, 182, 255);
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.socialLinks {
+    color: black;
+}
+
+.socialLinks:hover {
+    color: white;
+}
+
+
+  @media screen and (max-width: 600px) {
+    #welcome {
+        padding-top: 12%;
+        padding-bottom: 7%;
+    }
+  }

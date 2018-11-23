@@ -1,0 +1,10 @@
+.top {
+    padding-top: 5%;
+}
+
+@media screen and (max-width: 600px) {
+    .top {
+        padding-top: 12%;
+        padding-bottom: 7%;
+    }
+  }
