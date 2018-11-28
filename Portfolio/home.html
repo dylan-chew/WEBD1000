@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Home</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="main_styles.css">
-  <link rel="stylesheet" href="home.css">
-  <script src="scripts.js"></script>
+   <title>Home</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="main_styles.css">
+   <link rel="stylesheet" href="home.css">
+   <script src="scripts.js"></script>
 </head>
+
 <body>
 
    <!--HORIZONTAL NAV-->
@@ -22,70 +24,68 @@
       <a href="resume.html">Resume</a>
       <a href="contact.html">Contact</a>
       <a href="javascript:void(0);" class="icon" onclick="navButton()">
-        <i class="fa fa-bars"></i>
+         <i class="fa fa-bars"></i>
       </a>
-    </div>
-
-
-   <!--FIRST SECTION "WELCOME SECTION"-->
-   <div id="welcome" class="container-fluid text-center top">
-      <div class="row align-items-center">
-         <div class="col-lg-4">
-         </div>
-         <div id="middle" class="col-lg-4 center-block">
-               <h1>Hello.</h1>
-               <img src="me.jpg" id="me" class="img-responsive img-circle center-block" alt="me">
-               <p>
-                  My name is Dylan and I'm a student at Nova Scotia Community College studying Web Development.
-               </p>
-         </div>
-         <div class="col-lg-4">
-         </div>
-      </div>
    </div>
-
-   <!--SECOND SECTION "WHAT I DO SECTION"-->
-   <div id="about" class="container-fluid text-center">
-      <div class="row">
-         <div class="col-lg-4">
-         </div>
-         <div class="col-lg-4">
-            <h1>What do I do?</h1>
-            <img src="computer.jpg" id="me" class="img-responsive center-block" alt="computer">
-            <p>
-               The short answer: I make websites.
-            </p>
-            <p>
-               The longer answer: I create the skeleton of the site, create and structure elements to make it visually appealing, 
-               and finally I add functionality for users to interact and have fun with the website.
-            </p>
-         </div>
-         <div class="col-lg-4">
-         </div>
-      </div>
-   </div>
-
-      <!--SOCIAL MEDIA/KEEP UP WITH ME SECTION-->
-      <div id="social" class="container-fluid text-center">
-         <div class="row">
-            <div class="col-lg-4">
+   <!--CONTENT-->
+   <div class="container-fluid">
+      <div id="hello" class="row">
+         <div class="col-xl-12 text-center vcenter">
+            <div class="content">
+               <h1>Hello</h1>
             </div>
-            <div class="col-lg-4">
-               <h1>Stay in touch.</h1>
-               <img src="cellphone.jpg" id="me" class="img-responsive center-block" alt="computer">
+         </div>
+      </div>
+      <div id="welcome" class="row">
+         <div class="col-xl-12 text-center vcenter">
+            <div class="content">
+               <h2>About me</h2>
+               <img src="me.jpg" class="img-responsive img-circle center-block" alt="me">
                <p>
-                  I'm always on the move and adding new skills to my repertoire. To have a peek at any projects I've been working on
+                  My name is Dylan and I'm a first year student at Nova Scotia Community College studying Web Development.
+                  I'm originally from PEI, but moved to Halifax 6 years ago to take the Photogrpahy program at NSCC. After freelancing
+                  for 3 years I decided to return to school to pursue a career in Web Development and Programming.
+               </p>
+            </div>
+         </div>
+      </div>
+      <div id="about" class="row">
+         <div class="col-xl-12 text-center vcenter">
+            <div class="content">
+               <h2>What do I do?</h2>
+               <img src="computer.jpg" class="img-responsive img-circle center-block" alt="computer">
+               <p>
+                  The short answer: I make websites.
+               </p>
+               <p>
+                  The longer answer: I create the skeleton of the site, create and structure elements to make it
+                  visually
+                  appealing,
+                  and finally I add functionality for users to interact and have fun with the website.
+               </p>
+            </div>
+         </div>
+      </div>
+      <div id="social" class="row">
+         <div class="col-xl-12 text-center vcenter">
+            <div class="content">
+               <h2>Stay in touch</h2>
+               <img src="cellphone.jpg" class="img-responsive img-circle center-block" alt="computer">
+               <p>
+                  I'm always on the move and adding new skills to my repertoire. To have a peek at any projects I've
+                  been working on
                   feel free to give me a follow:
                </p>
                <a href="https://github.com" class="socialLinks"><i class="fa fa-git-square" style="font-size:36px"></i></a>
                <a href="https://linkedin.com" class="socialLinks"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
                <a href="https://twitter.com" class="socialLinks"><i class="fa fa-twitter-square" style="font-size:36px"></i></a>
             </div>
-            <div class="col-lg-4">
-            </div>
          </div>
       </div>
+   </div>
+   </div>
 
 
 </body>
+
 </html>

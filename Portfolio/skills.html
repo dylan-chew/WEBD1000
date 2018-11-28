@@ -1,62 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="main_styles.css">
   <link rel="stylesheet" href="skills.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <script src="scripts.js"></script>
 </head>
+
 <body>
-   <!--HORIZONTAL NAV-->
-    <div class="topnav" id="myTopnav">
-      <a href="home.html">Home</a>
-      <a href="skills.html" class="active">Skills</a>
-      <a href="goals.html">Goals</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="navButton()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+  <!--HORIZONTAL NAV-->
+  <div class="topnav" id="myTopnav">
+    <a href="home.html">Home</a>
+    <a href="skills.html" class="active">Skills</a>
+    <a href="goals.html">Goals</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="navButton()">
+      <i id="nav-font" class="fa fa-bars"></i>
+    </a>
+  </div>
 
-    <div id="skills" class="container-fluid text-center blue top">
-        <div class="row">
-            <div class="col-lg-4">
-                <h1>
-                    Tools I Use
-                </h1>
-                <ul>
-                    <li>Atom</li>
-                    <li>Visual Studio Code</li>
-                    <li>MariaDB</li>
-                    <li>DataGrip</li>
-                    <li>Drupal</li>
-                </ul>
-            </div>
-            <div class="col-lg-4">
-                <h1>
-                    Languages I Know
-                </h1>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>MySQL</li>
-                </ul>
-            </div>
-            <div class="col-lg-4">
-                <p>
-                
-                </p>
-            </div>
+  <!--CONTENT-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-12 text-center">
+        <div class="content top-row">
+          <h2>Technical Skills</h2>
+          <p>
+            A growing number of skills, languages, and programs that I've learned (and am still learning) throughout my
+            schooling
+          </p>
         </div>
+      </div>
     </div>
+    <div class="container-fluid icon-cont">
+      <div class="row icon-row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon front">
+            <i class="devicon-atom-original-wordmark colored front"></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon front">
+            <i class="devicon-bootstrap-plain-wordmark colored front"></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon front">
+            <i class="devicon-css3-plain-wordmark colored"></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon front">
+            <i class="devicon-drupal-plain colored"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row icon-row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon front">
+            <i class="devicon-gimp-plain colored"></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon front">
+            <i class="devicon-git-plain colored"></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon front">
+            <i class="devicon-github-plain-wordmark colored"></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon front">
+            <i class="devicon-html5-plain-wordmark colored"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row icon-row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon front">
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon front">
+            <i class="devicon-jetbrains-plain-wordmark colored"></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon front">
+            <i class="devicon-mysql-plain colored"></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon front">
+            <i class="devicon-nodejs-plain colored"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row icon-row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon front">
+            <i class="devicon-photoshop-plain colored"></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon">
+            <i class="devicon-visualstudio-plain colored"></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon">
+            <i class="devicon-apple-original colored"></i>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-s-3 col-xs-6 text-center">
+          <div class="icon">
+            <i class="devicon-windows8-original colored"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+
 </html>

@@ -3,52 +3,34 @@
 */
 
 /*HTML and general styles*/
-p {
-    padding-top: 5%;
-    padding-left: 3%;
-    padding-right: 3%;
+
+
+/*Hello*/
+#hello {
+    background-color: white;
+    height: 100vh;
+    padding: 0%;
 }
-
-h1 {
-    padding-bottom: 2%;
-}
-
-.container-fluid {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 
 /*Welcome*/
 #welcome {
     background-color: rgb(126, 182, 255);
-    margin: 0;
     height: 100vh;
-}
-
-#me {
-    width: 50%;
-    top: 50%;
-    left: 50%;
+    padding: 0%;
 }
 
 /*About*/
 #about {
     background-color: white;
     height: 100vh;
+    padding: 0%;
 }
-
-
-
 
 /*SOCIAL MEDIA SECTION/KEEP UP WIHT ME*/
 #social {
     background-color: rgb(126, 182, 255);
-    margin: 0;
     height: 100vh;
+    padding: 0%;
 }
 
 .socialLinks {
@@ -60,9 +42,14 @@ h1 {
 }
 
 
-  @media screen and (max-width: 600px) {
-    #welcome {
-        padding-top: 12%;
-        padding-bottom: 7%;
-    }
-  }
+
+/* Paragraph Style */
+p {
+    padding: 2%;
+}
+
+
+img {
+    width: 35%;
+    padding: 2%;
+}
