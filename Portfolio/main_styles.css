@@ -63,6 +63,7 @@ transform: translate(-50%,-50%);
     width: 100%; /* Full width */
     z-index: 500;
     padding: 0%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Style the links inside the navigation bar */

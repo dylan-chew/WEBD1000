@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Home</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="main_styles.css">
-  <script src="scripts.js"></script>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main_styles.css">
+    <link rel="stylesheet" href="goals.css">
+    <script src="scripts.js"></script>
 </head>
+
 <body>
-   <!--HORIZONTAL NAV-->
-   <div class="topnav" id="myTopnav">
-      <a href="home.html">Home</a>
-      <a href="skills.html">Skills</a>
-      <a href="goals.html" class="active">Goals</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="navButton()">
-        <i class="fa fa-bars"></i>
-      </a>
+    <!--HORIZONTAL NAV-->
+    <div class="topnav" id="myTopnav">
+        <a href="home.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="goals.html" class="active">Goals</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="navButton()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
     <div id="skills" class="container-fluid text-center blue top">
         <div class="row">
             <div class="col-lg-6">
-                <h1>
-                    Short Term Goals
-                </h1>
-                <ul>
-                    <li>Graduate from NSCC</li>
-                    <li>Become more familiar with software used in the industry such as Wordpress, Drupal, etc</li>
-                    <li>MariaDB</li>
-                    <li>DataGrip</li>
-                    <li>Drupal</li>
-                </ul>
+                <div id="flipperLeft" class="flipper" onmouseover="flipCardLeft()" onmouseout="returnCardLeft()">
+                    <h2 id="headerLeft">
+                        Short Term Goals
+                    </h2>
+                    <ul id="ulLeft">
+                        <li>Graduate from NSCC</li>
+                        <li>Become more familiar with software used in the industry such as Wordpress, Drupal, etc</li>
+                        <li>MariaDB</li>
+                        <li>DataGrip</li>
+                        <li>Drupal</li>
+                    </ul>
+                </div>
             </div>
             <div class="col-lg-6">
-                <h1>
-                    Long Term Goals
-                </h1>
-                <ul>
-                    <li>Create a web app</li>
-                    <li>Gain experience working in the industry</li>
-                    <li>JavaScript</li>
-                    <li>MySQL</li>
-                </ul>
+                <div id="flipperRight" class="flipper" onmouseover="flipCardRight()" onmouseout="returnCardRight()">
+                    <h2 id="headerRight">
+                        Long Term Goals
+                    </h2>
+                    <ul id="ulRight">
+                        <li>Create a web app</li>
+                        <li>Gain experience working in the industry</li>
+                        <li>JavaScript</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
