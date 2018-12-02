@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 6
+      Case Problem 4
+
+      Hamilton Conference Center Room Schedule
+      Author: Dylan Chew w0254970 
+      Date:   Dec 2, 2018
+
+      Filename:   hcc_schedule.html
+
+   -->
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="reset.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+   <link rel="stylesheet" href="hcc_styles.css">
+   <title>Hamilton Conference Center Room SChedule</title>
+</head>
+
+<body class="container">
+   <div class="container-fluid">
+      <div id="headerImg" class="row">
+         <img class="img-fluid" src="hamilton.jpg" alt="City of Hamiltol" />
+      </div>
+   </div>
+
+
+   <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">Hamilton Conference Center</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a class="nav-link" href="#">Home Page</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Reservations</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Facilities</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Virtual Tour</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Staff</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Calendar of Events</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Contact Info</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Directions</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">FAQ</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <br>
+
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-lg-8">
+            <p>
+               To reserve a room, please contact Yancy Inwe at extension 388 or by e-mail at yancyinwe@hconfcenter.org.
+               Reservations should be made at least 48 hours in advance. Cancellations require 24 hour notice. Room
+               deposits will
+               not be returned for cancellations within 24 hours of the scheduled event.
+            </p>
+         </div>
+         <div class="col-med-4 col-lg-4">
+            <table class="room_desc tablecol">
+               <caption>Room Descriptions</caption>
+               <thead>
+                  <th>ROOM NAME</th>
+                  <th>MAX_CAPACITY</th>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>Sunrise Room</td>
+                     <td>80</td>
+                  </tr>
+                  <tr>
+                     <td>Mountain View Room</td>
+                     <td>150</td>
+                  </tr>
+                  <tr>
+                     <td>Arbor Hall</td>
+                     <td>190</td>
+                  </tr>
+                  <tr>
+                     <td>Mitchell Theatre</td>
+                     <td>120</td>
+                  </tr>
+                  <tr>
+                     <td>Gold Room</td>
+                     <td>40</td>
+                  </tr>
+                  <tr>
+                     <td>Blue Room</td>
+                     <td>30</td>
+                  </tr>
+                  <tr>
+                     <td>Green Room</td>
+                     <td>55</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-med-12 col-lg-12 text-center">
+            <h1>
+               Reservations for Conference Rooms
+               Tuesday, April 10
+            </h1>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-med-12 timeschedule">
+            <table class="schedule">
+               <colgroup>
+                  <col class="firstcol" span="1" />
+                  <col class="secondcol" span="7" />
+               </colgroup>
+               <thead>
+
+                  <tr>
+                     <th>TIME</th>
+                     <th>SUNRISE ROOM</th>
+                     <th>MOUNTAIN VIEW ROOM</th>
+                     <th>ARBOR HALL</th>
+                     <th>MITCHELL THEATER</th>
+                     <th>GOLD ROOM</th>
+                     <th>BLUE ROOM</th>
+                     <th>GREEN ROOM</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <th>8:00</th>
+                     <td rowspan="4">Marriage Encounter</td>
+                     <td rowspan="3">Breakfast club of ohio</td>
+                     <td rowspan="9">Computer Expo set up</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+
+                  <tr>
+                     <th>8:30</th>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+
+                  <tr>
+                     <th>9:00</th>
+                     <td></td>
+                     <td rowspan="3">The Tompkins Group</td>
+                     <td rowspan="3">Retirement Planning</td>
+                     <td rowspan="4">Driver's Ed</td>
+                  </tr>
+
+                  <tr>
+                     <th>9:30</th>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>10:00</th>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>10:30</th>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td rowspan="3">Pearson Planning</td>
+                     <td rowspan="3">The Senior Group</td>
+
+                  </tr>
+                  <tr>
+                     <th>11:00</th>
+                     <td></td>
+                     <td rowspan="4">Ohio conference of Librarians</td>
+                     <td></td>
+                     <td rowspan="4">Movie Club</td>
+                  </tr>
+                  <tr>
+                     <th>11:30</th>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>12:00</th>
+                     <td rowspan="2">Marriage Encounter Luncheon</td>
+                     <td></td>
+                     <td></td>
+                     <td rowspan="2">Senior Luncheon</td>
+                  </tr>
+                  <tr>
+                     <th>12:30</th>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>1:00</th>
+                     <td></td>
+                     <td></td>
+                     <td rowspan="8">Computer Expo Opening Session</td>
+                     <td></td>
+                     <td></td>
+                     <td rowspan="5">Senior class</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>1:30</th>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>2:00</th>
+                     <td></td>
+                     <td rowspan="6">Ohio Book Resale Setup</td>
+                     <td></td>
+                     <td></td>
+                     <td rowspan="3">Mothers of Multiples</td>
+                  </tr>
+                  <tr>
+                     <th>2:30</th>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>3:00</th>
+                     <td rowspan="4">Marriage Encounter Talks</td>
+                     <td rowspan="4">Youth Theatre</td>
+                     <td></td>
+
+                  </tr>
+                  <tr>
+                     <th>3:30</th>
+                     <td rowspan="3">Teen Connection</td>
+                     <td rowspan="3">Tutoring</td>
+                     <td rowspan="3">Tutoring</td>
+                  </tr>
+                  <tr>
+                     <th>4:00</th>
+                  </tr>
+                  <tr>
+                     <th>4:30</th>
+                  </tr>
+                  <tr>
+                     <th>5:00</th>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+
+   <div class="container-fluid">
+      <div class="row text-center">
+         <div class="col-lg-12 nopad">
+            <footer>
+               Hamilton Conference Center
+               8711 West Park Lane
+               Hamilton, OH 45011
+               (513) 555 - 7911
+            </footer>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
