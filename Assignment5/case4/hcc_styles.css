@@ -38,12 +38,12 @@ nav {
 }
 
 p {
-    padding: 2%;
-    font-size: 1.5em;
+    padding: 5% 2% 5% 2%;
+    font-size: 1.2em;
 }
 
 h1 {
-   padding: 2% 10% 2% 10%;
+   padding: 2% 8% 2% 8%;
 }
 
 footer {
@@ -54,6 +54,9 @@ footer {
 
 .nopad {
    padding: 0%;
+}
+.overflow {
+    overflow: auto;
 }
 
 /* SCHEDULE STYLES */
