@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Home</title>
   <meta charset="utf-8">
@@ -9,39 +10,117 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="main_styles.css">
-  <script src="scripts.js"></script>
-</head>
-<body>
-   <!--HORIZONTAL NAV-->
-   <div class="topnav" id="myTopnav">
-      <a href="home.html">Home</a>
-      <a href="skills.html">Skills</a>
-      <a href="goals.html">Goals</a>
-      <a href="resume.html" class="active">Resume</a>
-      <a href="contact.html">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="navButton()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+  <link rel="stylesheet" href="resume.css">
 
-  <div id="resume" class="container-fluid text-center">
+</head>
+
+<body>
+  <!--HORIZONTAL NAV-->
+  <div class="topnav" id="myTopnav">
+    <a href="home.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="goals.html">Goals</a>
+    <a href="resume.html" class="active">Resume</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="navButton()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div id="resume" class="container-fluid">
     <div class="row">
-        <div class="col-lg-2">
-        </div>
-        <div class="col-lg-8">
-          <h1>What do I do?</h1>
-          <img src="computer.jpg" id="me" class="img-responsive center-block" alt="computer">
+      <div class="col-lg-8 heading">
+        <h1>Dylan Chew</h1>
+        <p>Hard working, motivated full stack developer looking to add industry experience to my portfolio</p>
+      </div>
+      <div class="col-lg-4 contact">
+        <p>
+          5787 North Street<br>
+          Halifax, Nova Scotia<br>
+          (902) 292-6404<br>
+          dylanw.chew@gmail.com<br>
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 education">
+          <h2>Education</h2>
+          <h3>NSCC Institute of Technology Campus, Halifax — Diploma of Web Development</h3>
           <p>
-              The short answer: I make websites.
+            September 2018 - Present
+          </p>
+          <h3>NSCC Ivany Campus, Halifax — Diploma of Photography</h3>
+          <p>
+            September 2012 - May 2014
+          </p>
+
+          <h3>Colonel Gray High School, Charlottetown, PE — Diploma</h3>
+          <p>
+            September 2006 - June 2009
+            Graduated with Honors
+          </p>
+        </div>
+        <div class="col-lg-4 skills">
+          <h2>Skills</h2>
+          <p>
+            Knowledgeable in front end and back end related languages such as JavaScript, MySQL, HTML and CSS, nodeJS
           </p>
           <p>
-              The longer answer: I create the skeleton of the site, create and structure elements to make it visually appealing, 
-              and finally I add functionality for users to interact and have fun with the website.
+            Proficiency in developer tools like Visual Studio Code, Atom, Bootstrap, JetBrains, MariaDB, as well as
+            design software including Photoshop, Lightroom, Illustrator and other programs in the Adobe Suite</p>
+          <p>
+            Basics for server administration and networking
           </p>
         </div>
-        <div class="col-lg-2">
+        <div class="row">
+          <div class="col-lg-8 experience">
+            <h2>Experience</h2>
+            <h3>
+              Scotia Pharmacy— Front Store Manager
+              AUGUST 2012 - PRESENT
+            </h3>
+            <p>
+              Created and maintain social media accounts
+              In charge of organizing and ordering stock
+              Communicating and managing staff
+              Provide quick and friendly customer service
+            </p>
+            <h3>
+              The Coast — Photographer
+              NOVEMBER 2015 - PRESENT
+            </h3>
+            <p>
+              Provide high quality photographs for web and print
+              Meet publication deadlines in timely manner
+              Photograph for articles and covers
+              On location shooting using strobes and natural lighting conditions
+            </p>
+            <h3>
+              Freelance Photographer
+              JUNE 2012 - PRESENT
+            </h3>
+            <p>
+              Various freelance jobs including: weddings, live music, band/artist promos, editorial, video, and
+              commercial work
+            </p>
+          </div>
+          <div class="col-lg-4 awards">
+            <h2>Awards</h2>
+            <ul>
+              <li>Gold - Skills Nova Scotia 2014 Gold medal winner in Photography</li>
+              <li>Silver - Skills PEI 2009 SIlver Medal winner in Flash Animation</li>
+              <li>Gold - The Coast BOH 2014, 2015 Gold awards for best Twitter</li>
+            </ul>
+
+            <h2>Interests and Hobbies</h2>
+            <p>
+              Shooting, developing and scanning film at home darkroom
+            </p>
+          </div>
         </div>
+      </div>
     </div>
   </div>
+  <script src="scripts.js"></script>
 </body>
+
 </html>

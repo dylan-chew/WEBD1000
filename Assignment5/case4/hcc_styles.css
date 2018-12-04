@@ -154,8 +154,16 @@ caption {
     }
 }
 
+
+/* COLUMNS STYLE */
 .tablecol {
-   -webkit-columns: 100px 2; /* Chrome, Safari, Opera */
-   -moz-columns: 100px 2; /* Firefox */
+   -webkit-columns: 100px 2;
+   -moz-columns: 100px 2; 
    columns: 100px 2;
+}
+
+p {
+    -webkit-columns: 100px 2;
+    -moz-columns: 100px 2; 
+    columns: 100px 2;
 }

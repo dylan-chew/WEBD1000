@@ -3,10 +3,11 @@
 */
 
 .top {
-    height: 100vh;
+    max-height: 100vh;
+    padding: 10%;
 }
 
 #text {
-    padding: 10% 20% 3% 20%;
+    padding: 10% 10% 3% 10%;
     font-size: 2em;
 }
